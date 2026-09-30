@@ -1,0 +1,42 @@
+{
+  "page": 2,
+  "has_next": false,
+  "source_system": "mock_api",
+  "data": [
+    {
+      "id": 2004,
+      "name": "Isabella Moore",
+      "datetime": "2021-11-03T10:20:00Z",
+      "department_id": 4,
+      "job_id": 3
+    },
+    {
+      "id": 2005,
+      "name": null,
+      "datetime": "2021-11-04T10:20:00Z",
+      "department_id": 4,
+      "job_id": 3
+    },
+    {
+      "id": 2006,
+      "name": "Thomas Clark",
+      "datetime": "bad_timestamp",
+      "department_id": 2,
+      "job_id": 4
+    },
+    {
+      "id": 2007,
+      "name": "Emily Davis",
+      "datetime": "2021-12-01T09:15:00Z",
+      "department_id": null,
+      "job_id": 2
+    },
+    {
+      "id": 2008,
+      "name": "George Martin",
+      "datetime": "2021-12-02T09:15:00Z",
+      "department_id": 2,
+      "job_id": null
+    }
+  ]
+}

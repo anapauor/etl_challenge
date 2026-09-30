@@ -1,0 +1,12 @@
+id,name,datetime,department_id,job_id
+1013,Andres Castro,2021-01-25T10:00:00Z,1,5
+1014,Valentina Rios,2021-04-17T11:00:00Z,3,3
+1015,Robert Taylor,2021-07-01T09:30:00Z,2,2
+1016,Camila Herrera,2021-10-21T14:45:00Z,5,4
+1017,,2021-08-01T10:00:00Z,1,2
+1018,Natalia Vega,invalid_date,1,2
+1019,Pedro Sanchez,2021-08-01T10:00:00Z,99,2
+1020,Lucia Ramirez,2021-08-01T10:00:00Z,1,99
+1008,Daniel Wilson Updated,2021-08-09T12:00:00Z,1,3
+1021,Empty Department Id,2021-08-02T10:00:00Z,,2
+1022,Empty Job Id,2021-08-02T10:00:00Z,1,

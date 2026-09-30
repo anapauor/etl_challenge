@@ -1,0 +1,31 @@
+# Basic CI for the hiring ETL challenge (no real Databricks deploy required).
+trigger:
+  - main
+  - master
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - task: UsePythonVersion@0
+    displayName: "Use Python 3.10"
+    inputs:
+      versionSpec: "3.10"
+      addToPath: true
+
+  - script: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+    displayName: "Install dependencies"
+
+  - script: |
+      ruff check src tests
+    displayName: "Run ruff"
+
+  - script: |
+      pytest -q
+    displayName: "Run pytest"
+
+  - script: |
+      echo "databricks bundle deploy --target dev"
+    displayName: "Placeholder Databricks deploy"
